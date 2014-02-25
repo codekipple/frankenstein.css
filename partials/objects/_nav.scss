@@ -16,10 +16,18 @@
     Demo: jsfiddle.net/inuitcss/Vnph4
 
 */
+
+/*
+    1:  Set line-height so positing does not depend on the global line-height set on the html element.
+        Overwrite this value on a particular nav if you need to.
+
+        This way if the global line-height changes it does not effect the navigations position.
+*/
 .nav {
     list-style: none;
     margin-left: 0;
     @extend .cf;
+    line-height: 1em; /* 1 */
 
     > li {
 
