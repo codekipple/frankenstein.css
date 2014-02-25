@@ -1,5 +1,38 @@
-/*------------------------------------*\
-    INCLUDES.SCSS
-\*------------------------------------*/
+/*
+    Includes
+*/
 
 @import "vars";
+
+@import "generic/functions";
+@import "generic/mixins";
+@import "generic/breakpoints";
+@import "generic/fonts";
+@import "generic/widths";
+@import "generic/normalize";
+@import "generic/reset";
+
+@import "base/main";
+@import "base/headings";
+@import "base/forms";
+@import "base/images";
+@import "base/links";
+@import "base/lists";
+@import "base/quotes";
+@import "base/tables";
+
+@import "objects/button";
+@import "objects/grids";
+@import "objects/media";
+@import "objects/nav";
+@import "objects/pagination";
+@import "objects/split";
+
+/*
+    UI partials to go here
+
+    e.g.
+    @import "ui/page-head"
+*/
+
+@import "generic/helpers";

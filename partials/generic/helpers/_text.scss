@@ -1,0 +1,51 @@
+/*
+    Helpers:Text
+    ===============
+*/
+
+// Text alignment
+.text--left     { text-align: left  !important; }
+.text--center   { text-align: center!important; }
+.text--right    { text-align: right !important; }
+
+// Font weights
+.weight--light      { font-weight: 300!important; }
+.weight--normal     { font-weight: 400!important; }
+.weight--semibold   { font-weight: 600!important; }
+
+/*
+    Add a help cursor to any element that gives the user extra information on
+    `:hover`.
+*/
+.informative        { cursor: help!important; }
+
+/*
+    Apply capital case to an element (usually a `strong`).
+*/
+.caps               { text-transform: uppercase!important; }
+
+/*
+    Wrapping/breaking
+*/
+.text--break    { word-wrap: break-word !important; }
+.text--no-wrap  { white-space: nowrap !important; }
+
+/*
+    Text truncation
+
+    Prevent text from wrapping onto multiple lines, and truncate with an
+    ellipsis.
+
+    1.  Ensure that the node has a maximum width after which truncation can
+        occur.
+    2.  Fix for IE 8/9 if `word-wrap: break-word` is in effect on ancestor
+        nodes.
+*/
+
+.text--truncate {
+    max-width: 100%; /* 1 */
+    overflow: hidden !important;
+    text-overflow: ellipsis !important;
+    white-space: nowrap !important;
+    word-wrap: normal !important; /* 2 */
+}

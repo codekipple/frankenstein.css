@@ -1,0 +1,52 @@
+/*
+    Helpers:Images
+    ==============
+*/
+
+/*
+    Image replacement
+    -----------------
+*/
+.ir {
+    border: 0;
+    font: 0/0 a;
+    text-shadow: none;
+    color: transparent;
+    background-color: transparent;
+}
+
+/*
+    outputted by the wp editor
+*/
+.alignright {
+    float: right;
+    margin: 0 0 1em 1.5em;
+}
+
+.alignleft {
+    float: left;
+    margin: 0 1.5em 1em 0;
+}
+
+.wp-caption {
+    border: solid 1px #ccc;
+    padding: .3em;
+    border-radius: 5px;
+
+    .wp-caption-text {
+        font-size: em($font-size-base - 4px);
+        margin: 0;
+    }
+}
+
+/*
+    Force images embedded into posts to be responsive
+*/
+img[class*="align"],
+img[class*="wp-image-"] {
+    height: auto; // Make sure images with WordPress-added height and width >attributes are scaled correctly
+}
+
+.wp-caption {
+    max-width: 100%;
+}

@@ -1,0 +1,55 @@
+/*
+    Helpers:State
+    ===============
+*/
+
+/*
+    Indicate that interaction will result in an (in)action.
+*/
+
+.is-actionable {
+    cursor: pointer !important;
+}
+
+.is-disabled {
+    cursor: default !important;
+}
+
+.is-draggable {
+    cursor: move !important;
+}
+
+/*
+    Completely remove from the flow and screen readers.
+*/
+
+.is-hidden {
+    display: none !important;
+    visibility: hidden !important;
+}
+
+/*
+    Completely remove from the flow but leave available to screen readers.
+*/
+
+.is-hidden-visually {
+    position: absolute !important;
+    overflow: hidden !important;
+    width: 1px !important;
+    height: 1px !important;
+    padding: 0 !important;
+    border: 0 !important;
+    clip: rect(1px, 1px, 1px, 1px) !important;
+}
+
+/*
+    Control visibility without affecting flow.
+*/
+
+.is-invisible {
+    visibility: hidden !important;
+}
+
+.is-visible {
+    visibility: visible !important;
+}

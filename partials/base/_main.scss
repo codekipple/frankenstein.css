@@ -1,9 +1,15 @@
-/*------------------------------------*\
-    $MAIN
-\*------------------------------------*/
+/*
+    Main
+    ====
+*/
+
 html {
+    font-size: em($font-size-base);
+    line-height: 1.2;
+    font-family: $font;
     overflow-y: scroll;
     min-height: 100%;
+    color: $color-body-text;
 }
 
 body {

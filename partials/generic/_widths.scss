@@ -1,44 +1,51 @@
-/*------------------------------------*\
-    $WIDTHS
-\*------------------------------------*/
-/**
- * Sizes in human readable format. These are used in conjunction with other
- * objects and abstractions, most commonly the grid system.
- *
- * We have a mixin to generate our widths and their breakpoint-specific
- * variations.
- */
+/*
+    Widths
+    ======
+*/
+
+/*
+    Sizes in human readable format. These are used in conjunction with other
+    objects and abstractions, most commonly the grid system.
+
+    We have a mixin to generate our widths and their breakpoint-specific
+    variations.
+*/
 
 @mixin grid-setup($namespace: "") {
-    /**
-    * Whole
+    /*
+        Whole
+        -----
     */
     .#{$namespace}one-whole         { width:100%; }
 
 
-    /**
-    * Halves
+    /*
+        Halves
+        ------
     */
     .#{$namespace}one-half          { width:50%; }
 
 
-    /**
-    * Thirds
+    /*
+        Thirds
+        ------
     */
     .#{$namespace}one-third         { width:33.333%; }
     .#{$namespace}two-thirds        { width:66.667%; }
 
 
-    /**
-    * Quarters
+    /*
+        Quarters
+        --------
     */
     .#{$namespace}one-quarter       { width:25%; }
     .#{$namespace}two-quarters      { @extend .#{$namespace}one-half; }
     .#{$namespace}three-quarters    { width:75%; }
 
 
-    /**
-    * Fifths
+    /*
+        Fifths
+        ------
     */
     .#{$namespace}one-fifth         { width:20%; }
     .#{$namespace}two-fifths        { width:40%; }
@@ -46,8 +53,9 @@
     .#{$namespace}four-fifths       { width:80%; }
 
 
-    /**
-    * Sixths
+    /*
+        Sixths
+        ------
     */
     .#{$namespace}one-sixth         { width:16.667%; }
     .#{$namespace}two-sixths        { @extend .#{$namespace}one-third; }
@@ -56,8 +64,9 @@
     .#{$namespace}five-sixths       { width:83.333%; }
 
 
-    /**
-    * Eighths
+    /*
+        Eighths
+        -------
     */
     .#{$namespace}one-eighth        { width:12.5%; }
     .#{$namespace}two-eighths       { @extend .#{$namespace}one-quarter; }
@@ -68,8 +77,9 @@
     .#{$namespace}seven-eighths     { width:87.5%; }
 
 
-    /**
-    * Tenths
+    /*
+        Tenths
+        ------
     */
     .#{$namespace}one-tenth         { width:10%; }
     .#{$namespace}two-tenths        { @extend .#{$namespace}one-fifth; }
@@ -82,8 +92,9 @@
     .#{$namespace}nine-tenths       { width:90%; }
 
 
-    /**
-    * Twelfths
+    /*
+        Twelfths
+        --------
     */
     .#{$namespace}one-twelfth       { width:8.333%; }
     .#{$namespace}two-twelfths      { @extend .#{$namespace}one-sixth; }
@@ -100,11 +111,10 @@
 
 @include grid-setup();
 
+/*
+    create more grids for global breakpoints
 
-
-/**
- * create more grids for global breakpoints
- */
-// @include respond($grid-largest) {
-//     @include grid-setup("largest-");
-// }
+    @include respond($grid-largest) {
+        @include grid-setup("largest-");
+    }
+*/
