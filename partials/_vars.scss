@@ -1,0 +1,49 @@
+/*------------------------------------*\
+    VARS.SCSS
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+    $COLORS
+\*------------------------------------*/
+$color-body-text: #333;
+$color-link: blue;
+$color-link-hover: lighten($color-link, 20);
+
+
+
+
+/*------------------------------------*\
+    $FONTS
+\*------------------------------------*/
+$font: Georgia, Times, "Times New Roman", serif;
+$font-size-base: 16px;
+$font-size-browser-default: 16px;
+
+$font-size-h1: 20px;
+$font-size-h2: 20px;
+$font-size-h3: 20px;
+$font-size-h4: 20px;
+$font-size-h5: 20px;
+$font-size-h6: 20px;
+
+
+
+
+/*------------------------------------*\
+    $Z-INDEXES
+\*------------------------------------*/
+
+
+
+
+/*------------------------------------*\
+    $widths
+\*------------------------------------*/
+$width-site-min: 320px;
+$width-site-max: 1090px;
+
+
+$base-spacing-unit: 1em;

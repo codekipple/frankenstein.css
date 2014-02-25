@@ -1,0 +1,28 @@
+/*------------------------------------*\
+    HEADINGS.SCSS
+\*------------------------------------*/
+
+#{headings()} {
+    font: {
+        family: $font;
+    }
+}
+
+h1,.alpha{
+    font-size: $font-size-h1;
+}
+h2,.beta{
+    font-size: $font-size-h2;
+}
+h3,.gamma{
+    font-size: $font-size-h3;
+}
+h4,.delta{
+    font-size: $font-size-h4;
+}
+h5,.epsilon{
+    font-size: $font-size-h5;
+}
+h6,.zeta{
+    font-size: $font-size-h6;
+}

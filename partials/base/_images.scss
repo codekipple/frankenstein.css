@@ -1,0 +1,24 @@
+/*------------------------------------*\
+    $IMAGES
+\*------------------------------------*/
+
+/**
+ * So that `alt` text is visually offset if images don’t load.
+ */
+img{
+    font-style:italic;
+}
+
+/**
+ * Fluid images.
+ */
+img{
+    max-width:100%;
+}
+
+/**
+ * Images in `figure` elements.
+ */
+figure > img{
+    display:block;
+}
