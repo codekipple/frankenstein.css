@@ -1,0 +1,11 @@
+.promote-layer {
+    /*
+        Promote item to it's own layer
+
+        http://aerotwist.com/blog/on-translate3d-and-layer-creation-hacks/
+
+        at some point change this to the new property will-change
+        http://aerotwist.com/blog/bye-bye-layer-hacks/
+    */
+    transform: translateZ(0);
+}
