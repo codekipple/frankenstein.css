@@ -8,7 +8,6 @@
 @import "generic/mixins";
 @import "generic/breakpoints";
 @import "generic/fonts";
-@import "generic/widths";
 @import "generic/normalize";
 @import "generic/reset";
 
@@ -21,13 +20,6 @@
 @import "base/quotes";
 @import "base/tables";
 
-@import "objects/button";
-@import "objects/grids";
-@import "objects/media";
-@import "objects/nav";
-@import "objects/pagination";
-@import "objects/split";
-
 /*
     UI partials to go here
 
@@ -35,4 +27,12 @@
     @import "ui/page-head"
 */
 
+@import "objects/button";
+@import "objects/grids";
+@import "objects/media";
+@import "objects/nav";
+@import "objects/pagination";
+@import "objects/split";
+
+@import "generic/widths";
 @import "generic/helpers";
