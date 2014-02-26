@@ -18,29 +18,28 @@
     1.  Corrects inability to style clickable `input` types in iOS
     2.  Normalize `box-sizing` across all elements that this component could be
         applied to.
-    3.  Inherit font styles from ancestor.
-    4.  Allow easier styling.
-    5.  Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
-    6.  Normalise box model styles.
-    7.  Prevent button text from being selectable.
-    8.  Stop buttons wrapping and looking broken.
+    3.  Allow easier styling.
+    4.  Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
+    5.  Normalise box model styles.
+    6.  Prevent button text from being selectable.
+    7.  Stop buttons wrapping and looking broken.
 */
 
 .btn {
     -webkit-appearance: none; /* 1 */
     box-sizing: border-box; /* 2 */
     cursor: pointer;
-    font: inherit; /* 3 */
-    display: inline-block; /* 4 */
-    line-height: normal; /* 5 */
+    display: inline-block; /* 3 */
+    line-height: normal; /* 4 */
     margin: 0;
-    padding-top: 0; /* 6 */
-    padding-bottom: 0; /* 6 */
+    border: 0; /* 5 */
+    padding-top: 0; /* 5 */
+    padding-bottom: 0; /* 5 */
     -moz-user-select: none;
     -ms-user-select: none;
     -webkit-user-select: none;
-    user-select: none; /* 7 */
-    white-space: nowrap; /* 8 */
+    user-select: none; /* 6 */
+    white-space: nowrap; /* 7 */
     position: relative;
     text-decoration: none;
 
