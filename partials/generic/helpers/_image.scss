@@ -7,7 +7,7 @@
     Image replacement
     -----------------
 */
-.ir {
+%ir {
     border: 0;
     font: 0/0 a;
     text-shadow: none;
@@ -15,8 +15,12 @@
     background-color: transparent;
 }
 
+.ir { @extend %ir; }
+
 /*
     outputted by the wp editor
+    --------------------------
+    Remove if your not working with WordPress
 */
 .alignright {
     float: right;
@@ -34,7 +38,7 @@
     border-radius: 5px;
 
     .wp-caption-text {
-        font-size: em($font-size-base - 4px);
+        font-size: em($base-font-size - 4px);
         margin: 0;
     }
 }

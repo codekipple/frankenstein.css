@@ -17,8 +17,7 @@
         `:before` to contain the top-margins of child elements.
  */
 
-.cf,
-.group {
+%clearfix {
     &:before,
     &:after {
         content: ""; /* 1 */
@@ -28,6 +27,11 @@
     &:after {
         clear: both;
     }
+}
+
+.cf,
+.group {
+    @extend %clearfix;
 }
 
 
@@ -41,9 +45,9 @@
     problematic.
 */
 
-.nbfc {
-    overflow: hidden !important;
-}
+%nbfc { overflow: hidden !important; }
+.nbfc { @extend %nbfc; }
+
 
 /*
     New block formatting context (alternative)
@@ -57,10 +61,12 @@
     exceed its width.
 */
 
-.nbfc--alt {
+%nbfc--alt {
     display: table-cell !important; /* 1 */
     width: 10000px !important; /* 2 */
 }
+
+.nbfc--alt { @extend %nbfc--alt; }
 
 /*
     Floats

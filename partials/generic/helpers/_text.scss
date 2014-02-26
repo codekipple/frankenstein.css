@@ -8,7 +8,9 @@
 .text--center   { text-align: center!important; }
 .text--right    { text-align: right !important; }
 
-// Font weights
+/*
+    Font weights
+*/
 .weight--light      { font-weight: 300!important; }
 .weight--normal     { font-weight: 400!important; }
 .weight--semibold   { font-weight: 600!important; }
@@ -17,12 +19,27 @@
     Add a help cursor to any element that gives the user extra information on
     `:hover`.
 */
-.informative        { cursor: help!important; }
+%informative        { cursor: help!important; }
+.informative        { @extend %informative; }
 
 /*
     Apply capital case to an element (usually a `strong`).
 */
-.caps               { text-transform: uppercase!important; }
+%caps { text-transform: uppercase!important; }
+.caps { @extend %caps; }
+
+/*
+    The `.lede` class is used to make the introductory text (usually a paragraph)
+    of a document slightly larger.
+*/
+
+%lede {
+    font-size: em(23px);
+    line-height: 1.2;
+    color: $color-blue;
+}
+
+.lede { @extend %lede }
 
 /*
     Wrapping/breaking
@@ -42,10 +59,12 @@
         nodes.
 */
 
-.text--truncate {
+%text--truncate {
     max-width: 100%; /* 1 */
     overflow: hidden !important;
     text-overflow: ellipsis !important;
     white-space: nowrap !important;
     word-wrap: normal !important; /* 2 */
 }
+
+.text--truncate { @extend %text--truncate; }

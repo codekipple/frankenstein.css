@@ -7,32 +7,31 @@
     Indicate that interaction will result in an (in)action.
 */
 
-.is-actionable {
-    cursor: pointer !important;
-}
+%is-actionable { cursor: pointer !important; }
+.is-actionable { @extend %is-actionable; }
 
-.is-disabled {
-    cursor: default !important;
-}
+%is-disabled { cursor: default !important; }
+.is-disabled { @extend %is-disabled; }
 
-.is-draggable {
-    cursor: move !important;
-}
+%is-draggable { cursor: move !important; }
+.is-draggable { @extend %is-draggable; }
 
 /*
     Completely remove from the flow and screen readers.
 */
 
-.is-hidden {
+%is-hidden {
     display: none !important;
     visibility: hidden !important;
 }
+
+.is-hidden { @extend %is-hidden; }
 
 /*
     Completely remove from the flow but leave available to screen readers.
 */
 
-.is-hidden-visually {
+%is-hidden-visually {
     position: absolute !important;
     overflow: hidden !important;
     width: 1px !important;
@@ -42,14 +41,46 @@
     clip: rect(1px, 1px, 1px, 1px) !important;
 }
 
+.is-hidden-visually { @extend %is-hidden-visually; }
+
 /*
     Control visibility without affecting flow.
 */
 
-.is-invisible {
-    visibility: hidden !important;
+%is-invisible { visibility: hidden !important; }
+.is-invisible { @extend %is-invisible; }
+
+%is-visible { visibility: visible !important; }
+.is-visible { @extend %is-visible; }
+
+
+/*
+    WebKit-style focus
+*/
+%tab-focus {
+    // Default
+    outline: thin dotted;
+    // WebKit
+    outline: 5px auto -webkit-focus-ring-color;
+    outline-offset: -2px;
 }
 
-.is-visible {
-    visibility: visible !important;
+.tab-focus { @extend %tab-focus; }
+
+/*
+    Placeholder text
+*/
+%placeholder {
+    &::-moz-placeholder {
+        color: $color-input-placeholder; // Firefox
+        opacity: 1; // See https://github.com/twbs/bootstrap/pull/11526
+    }
+
+    &:-ms-input-placeholder {
+        color: $color-input-placeholder; // Internet Explorer 10+
+    }
+
+    &::-webkit-input-placeholder {
+        color: $color-input-placeholder; // Safari and Chrome
+    }
 }

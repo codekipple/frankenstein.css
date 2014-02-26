@@ -8,10 +8,25 @@
     colors
     ------
 */
-$color-body-text: #333;
-$color-link: blue;
+$color-blue: #064860;
+$color-blue-highlight: #66afe9;
+$color-grey: #58595b;
+$color-grey: #eee;
+
+/*
+    Applied colors
+    --------------
+*/
+
+// typography
+$color-body-text: $color-grey;
+$color-link: $color-blue;
 $color-link-hover: lighten($color-link, 20);
 
+// forms
+$color-input-focus: $color-blue-highlight;
+$color-input-bg-disabled: $color-grey;
+$color-input-placeholder: $color-grey;
 
 /*
     Fonts
