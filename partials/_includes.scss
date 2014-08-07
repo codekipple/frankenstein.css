@@ -4,35 +4,10 @@
 
 @import "vars";
 
-@import "generic/functions";
-@import "generic/mixins";
-@import "generic/breakpoints";
-@import "generic/fonts";
-@import "generic/normalize";
-@import "generic/reset";
+@import "base/includes";
 
-@import "base/main";
-@import "base/headings";
-@import "base/forms";
-@import "base/images";
-@import "base/links";
-@import "base/lists";
-@import "base/quotes";
-@import "base/tables";
+@import "generic/includes";
 
-/*
-    UI partials to go here
+@import "objects/includes";
 
-    e.g.
-    @import "ui/page-head"
-*/
-
-@import "objects/button";
-@import "objects/grids";
-@import "objects/media";
-@import "objects/nav";
-@import "objects/pagination";
-@import "objects/split";
-
-@import "generic/widths";
-@import "generic/helpers";
+@import "ui/includes";
