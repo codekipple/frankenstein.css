@@ -1,22 +1,55 @@
-/*
+/*  ==========================================================================
     Includes
+    ==========================================================================
+
+    This is the main includes file. Here we include each of the sections.
+    This includes file only concerns it's self with the cascade order of
+    the different sections. Each section than controls it's own internal cascade.
+
+    Cascade Index
+    -------------
+    1.  Vars
+        The 'Vars' section holds global variables that all partials should be able to access if needs be. Note partials may have variables within them that are deemed only relevant for that partial. If you add a variable that you want to use across various partials you might want to consider adding it here.
+
+    2.  Functions
+        Has useful functions.
+
+    3.  Breakpoints
+        The 'Breakpoints' section contains a list of global variables that represent different breakpoint sizes. They are separated from the 'Vars' section because they will make use of some functions, particularly em() and bp-size().
+
+    4.  Mixins
+        Has useful mixins.
+
+    5.  Base
+        These are styles which effect base elements (p, a, table ect). The 'Base' section includes a reset and parts of normalize.css(https://github.com/necolas/normalize.css) are sprinkled throughout.
+
+    6.  vendor
+        If you want to include 3rd party css. They are included here so that the 'Objects' and 'Ui' sections van override styles.
+
+    7.  Objects
+        Reusable patterns. May contain generic patterns like the 'Media' object but you may also fill this folder with patterns that are a little more specific to your project.
+
+    8.  Ui
+        The main styles for your project.
+
+    9.  Helpers
+        Style trumps. Helper classes take precedence over everything else. I recommend only using helper classes if the style the helper class enables is relevant across all viewports otherwise you end up trying to fight the helper classes in the cascade.
 */
 
-@import "vars";
+@import "vars"; /* 1 */
 
-@import "functions/includes";
+@import "functions/includes"; /* 2 */
 
-@import "mixins/includes";
+@import "breakpoints"; /* 3 */
 
-@import "breakpoints";
+@import "mixins/includes"; /* 4 */
 
-@import "base/includes";
+@import "base/includes"; /* 5 */
 
-@import "vendor/includes";
+@import "vendor/includes"; /* 6 */
 
-@import "objects/includes";
+@import "objects/includes"; /* 7 */
 
-@import "ui/includes";
+@import "ui/includes"; /* 8 */
 
-// Style trumps
-@import "helpers/includes";
+@import "helpers/includes"; /* 9 */
