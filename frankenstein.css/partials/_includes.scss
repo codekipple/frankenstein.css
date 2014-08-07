@@ -12,8 +12,9 @@
 
 @import "base/includes";
 
-@import "generic/includes";
-
 @import "objects/includes";
 
 @import "ui/includes";
+
+// Style trumps
+@import "helpers/includes";

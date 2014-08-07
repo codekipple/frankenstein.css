@@ -1,7 +1,6 @@
-/*
-    Widths
-    ======
-*/
+/*  ==========================================================================
+    Generic:Widths
+    ========================================================================== */
 
 /*
     Sizes in human readable format. These are used in conjunction with other
@@ -30,8 +29,8 @@
         Thirds
         ------
     */
-    .#{$namespace}one-third         { width:33.333%; }
-    .#{$namespace}two-thirds        { width:66.667%; }
+    .#{$namespace}one-third         { width:33.3333333%; }
+    .#{$namespace}two-thirds        { width:66.6666666%; }
 
 
     /*
@@ -57,11 +56,11 @@
         Sixths
         ------
     */
-    .#{$namespace}one-sixth         { width:16.667%; }
+    .#{$namespace}one-sixth         { width:16.6666666%; }
     .#{$namespace}two-sixths        { @extend .#{$namespace}one-third; }
     .#{$namespace}three-sixths      { @extend .#{$namespace}one-half; }
     .#{$namespace}four-sixths       { @extend .#{$namespace}two-thirds; }
-    .#{$namespace}five-sixths       { width:83.333%; }
+    .#{$namespace}five-sixths       { width:83.3333333%; }
 
 
     /*
@@ -76,6 +75,16 @@
     .#{$namespace}six-eighths       { @extend .#{$namespace}three-quarters; }
     .#{$namespace}seven-eighths     { width:87.5%; }
 
+    /*
+        Ninths
+        ------
+    */
+    .#{$namespace}one-ninth           { width: 11.1111111%; }
+    .#{$namespace}two-ninths          { width: 22.2222222%; }
+    .#{$namespace}four-ninths         { width: 44.4444444%; }
+    .#{$namespace}five-ninths         { width: 55.5555555%; }
+    .#{$namespace}seven-ninths        { width: 77.7777777%; }
+    .#{$namespace}eight-ninths        { width: 88.8888888%; }
 
     /*
         Tenths
@@ -96,25 +105,25 @@
         Twelfths
         --------
     */
-    .#{$namespace}one-twelfth       { width:8.333%; }
+    .#{$namespace}one-twelfth       { width:8.3333333%; }
     .#{$namespace}two-twelfths      { @extend .#{$namespace}one-sixth; }
     .#{$namespace}three-twelfths    { @extend .#{$namespace}one-quarter; }
     .#{$namespace}four-twelfths     { @extend .#{$namespace}one-third; }
-    .#{$namespace}five-twelfths     { width:41.667% }
+    .#{$namespace}five-twelfths     { width:41.6666666% }
     .#{$namespace}six-twelfths      { @extend .#{$namespace}one-half; }
-    .#{$namespace}seven-twelfths    { width:58.333%; }
+    .#{$namespace}seven-twelfths    { width:58.3333333%; }
     .#{$namespace}eight-twelfths    { @extend .#{$namespace}two-thirds; }
     .#{$namespace}nine-twelfths     { @extend .#{$namespace}three-quarters; }
     .#{$namespace}ten-twelfths      { @extend .#{$namespace}five-sixths; }
-    .#{$namespace}eleven-twelfths   { width:91.667%; }
+    .#{$namespace}eleven-twelfths   { width:91.6666666%; }
 }
 
 @include grid-setup();
 
 /*
-    create more grids for global breakpoints
+Create more grid sizes below:-
 
-    @include respond($grid-largest) {
-        @include grid-setup("largest-");
-    }
+@include respond($bp--grid-small) {
+    @include grid-setup("small-");
+}
 */
