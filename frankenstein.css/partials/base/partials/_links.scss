@@ -1,14 +1,16 @@
-/*
-    links
-    =====
-*/
+/*  ==========================================================================
+    Base:Links
+    ========================================================================== */
 
+/*
+    1. Remove the gray background color from active links in IE 10. - Normalize:v3.0.1
+*/
 a {
-    color: $color-link;
-    text-decoration: none;
+    color: $color--link;
+    background: transparent; /* 1 */
 
     &:hover,
     &:focus {
-        color: $color-link-hover;
+        color: $color--link-hover;
     }
 }

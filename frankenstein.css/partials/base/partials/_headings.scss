@@ -1,40 +1,39 @@
-/*
-    Headings
-    ========
-*/
+/*  ==========================================================================
+    Base:Headings
+    ========================================================================== */
 
 #{headings()} {
     font: {
-        family: $font;
+        family: $font--one;
     }
 }
 
 h1,
 .alpha {
-    font-size: $font-size-h1;
+    font-size: $fs--alpha;
 }
 
 h2,
 .beta {
-    font-size: $font-size-h2;
+    font-size: $fs--beta;
 }
 
 h3,
 .gamma {
-    font-size: $font-size-h3;
+    font-size: $fs--gamma;
 }
 
 h4,
 .delta {
-    font-size: $font-size-h4;
+    font-size: $fs--delta;
 }
 
 h5,
 .epsilon {
-    font-size: $font-size-h5;
+    font-size: $fs--epsilon;
 }
 
 h6,
 .zeta {
-    font-size: $font-size-h6;
+    font-size: $fs--zeta;
 }

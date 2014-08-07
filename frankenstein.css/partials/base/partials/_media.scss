@@ -1,11 +1,10 @@
 /*  ==========================================================================
-    Base:Tables
+    Base:Media
     ========================================================================== */
 
 /*
-    1. Remove most spacing between table cells. - Normalize:v3.0.1
+    1. http://timkadlec.com/2012/10/ie10-snap-mode-and-responsive-design/
 */
-table {
-    border-collapse: collapse; /* 1 */
-    border-spacing: 0; /* 1 */
+@-ms-viewport{
+    width: device-width; /* 1 */
 }

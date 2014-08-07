@@ -12,7 +12,7 @@
     $base-font-size is used as a default so when you use the em() function you don't have to provide
     a second parameter if your working with a element with the default font-size
 */
-@function em($target-px, $context-px: $font-size-browser-default) {
+@function em($target-px, $context-px: $fs--browser-default) {
     @return ($target-px / $context-px) * 1em;
 }
 
