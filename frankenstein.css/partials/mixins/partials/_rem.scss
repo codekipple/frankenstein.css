@@ -1,5 +1,8 @@
-/*
-    a small mixin for easy use of rem with px as fallback
+/*  ==========================================================================
+    Mixins:Rem
+    ==========================================================================
+
+    A small mixin for easy use of rem with px as fallback
     usage: @include x-rem(font-size, 14px)
     usage: @include x-rem(marign, 0 12px 2 1.2)
     usage: @include x-rem(padding, 1.5 24px)
@@ -25,7 +28,7 @@
       $rem-values: join($rem-values, 0);
     } @else if type-of($value) == number and not unitless($value) and (unit($value) == px) {
       // px value given - calculate rem value from base-font-size
-      $new-rem-value: $value / $base-font-size;
+      $new-rem-value: $value / $fs--base;
       $px-values: join($px-values, round($value));
       $rem-values: join($rem-values, #{$new-rem-value}rem);
     } @else {

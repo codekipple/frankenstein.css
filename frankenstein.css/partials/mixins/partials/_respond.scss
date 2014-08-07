@@ -1,0 +1,36 @@
+/*  ==========================================================================
+    Mixins:Respond
+    ==========================================================================
+
+    Generate media queries.
+
+    $respond-no-media-queries
+    -------------------------
+    set this global var in your stylesheet aimed at browsers which do
+    not support media queries (ie8) to give them desktop styles only.
+
+    This way they get all the styles but the cascade makes sure they display
+    the desktop styles (if your using a mobile first approach to layering the media queries)
+*/
+@mixin respond($point: mull, $query: null) {
+    $respond-no-media-queries: false !default;
+
+    @if ($respond-no-media-queries) {
+        // fallback to the cascade
+        // This is for providing desktop styles to browsers which don't support media queries (ie8)
+        @content;
+    } @else {
+        // output media query
+        // if a single point is provided do a min-width media query
+        // otherwise just run whatever query is passed.
+        @if ($point) {
+            @media (min-width: #{$point}) {
+                @content;
+            }
+        } @else if($query) {
+            @media #{$query} {
+                @content
+            }
+        }
+    }
+}
