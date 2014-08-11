@@ -2,6 +2,9 @@
     Objects:Grids
     ==========================================================================
 
+    These grids are mostly from css wizardry grids:- https://github.com/csswizardry/csswizardry-grids
+    but there is also some stuff from an older version of SUIT grid component:- https://github.com/suitcss/components-grid
+
     Fluid and nestable grid system, e.g.:
 
     <div class="grid">
@@ -36,18 +39,17 @@
 
     1.  Account for browser defaults of elements that might be the root node of
         the component.
-    2.  Ensure consistent default alignment.
 */
 .grid {
     display: block; /* 1 */
     padding: 0; /* 1 */
     margin: 0; /* 1 */
-    text-align: left; /* 2 */
+    margin-left: - em($base-spacing-unit);
 }
 
 
 /*
-    Very infrequently occuring grid wrappers as children of grid wrappers.
+    Very infrequently occurring grid wrappers as children of grid wrappers.
 */
 .grid > .grid {
     margin-left: 0;
@@ -65,4 +67,30 @@
     display: inline-block; /* 1 */
     vertical-align: top; /* 2 */
     width: 100%; /* 3 */
+    padding-left: em($base-spacing-unit);
+}
+
+/*
+    Gutterless grids have all the properties of regular grids, minus any spacing.
+*/
+.grid--full {
+    margin-left: 0;
+
+    > .grid__cell {
+        padding-left: 0;
+    }
+}
+
+/*
+    Reversed grids allow you to structure your source in the opposite order to
+    how your rendered layout will appear. Extends `.grid`.
+*/
+.grid--rev {
+    direction: rtl;
+    text-align: left;
+
+    > .grid__cell {
+        direction: ltr;
+        text-align: left;
+    }
 }
