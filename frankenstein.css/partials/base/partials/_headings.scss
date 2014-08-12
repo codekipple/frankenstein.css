@@ -2,38 +2,37 @@
     Base:Headings
     ========================================================================== */
 
-#{headings()} {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     font: {
         family: $font--one;
     }
 }
 
-h1,
-.alpha {
+h1 {
     font-size: $fs--alpha;
 }
 
-h2,
-.beta {
+h2 {
     font-size: $fs--beta;
 }
 
-h3,
-.gamma {
+h3 {
     font-size: $fs--gamma;
 }
 
-h4,
-.delta {
+h4 {
     font-size: $fs--delta;
 }
 
-h5,
-.epsilon {
+h5 {
     font-size: $fs--epsilon;
 }
 
-h6,
-.zeta {
+h6 {
     font-size: $fs--zeta;
 }
