@@ -22,7 +22,7 @@
 
 .media__img {
     float: left;
-    margin-right: $base-spacing-unit;
+    margin-right: $su--block;
 }
 
 /*
@@ -30,7 +30,7 @@
 */
 .media__img--rev {
     float: right;
-    margin-left: $base-spacing-unit;
+    margin-left: $su--block;
 }
 
 .media__img img,

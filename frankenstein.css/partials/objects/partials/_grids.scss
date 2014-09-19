@@ -44,7 +44,7 @@
     display: block; /* 1 */
     padding: 0; /* 1 */
     margin: 0; /* 1 */
-    margin-left: - em($base-spacing-unit);
+    margin-left: - em($su--block);
 }
 
 
@@ -67,7 +67,7 @@
     display: inline-block; /* 1 */
     vertical-align: top; /* 2 */
     width: 100%; /* 3 */
-    padding-left: em($base-spacing-unit);
+    padding-left: em($su--block);
 }
 
 /*
