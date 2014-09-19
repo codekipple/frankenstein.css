@@ -10,6 +10,7 @@ html {
     -webkit-text-size-adjust: 100%; /* 1 */
     -ms-text-size-adjust: 100%; /* 1 */
     font-size: em($fs--base, $fs--browser-default);
+    font-family: $font--one;
 }
 
 /*
