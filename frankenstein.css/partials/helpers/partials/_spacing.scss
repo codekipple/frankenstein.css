@@ -2,25 +2,47 @@
     Generic:Helpers:Spacing
     ========================================================================== */
 
+$su-block-i: em($su--block) !important;
+$su-block--half-i: em($su--block--half) !important;
+
 /*
-    remove margins
+    add/remove margins
+    ------------------
 */
-.flush          { margin:       0!important; }
-.flush--top     { margin-top:   0!important; }
-.flush--right   { margin-right: 0!important; }
-.flush--bottom  { margin-bottom:0!important; }
-.flush--left    { margin-left:  0!important; }
-.flush--ends    { margin-top:   0!important; margin-bottom:0!important; }
-.flush--sides   { margin-right: 0!important; margin-left:  0!important; }
+.push               { margin: $su-block-i; }
+.push--top          { margin-top: $su-block-i; }
+.push--right        { margin-right: $su-block-i; }
+.push--bottom       { margin-bottom: $su-block-i; }
+.push--left         { margin-left: $su-block-i; }
+.push--ends         { margin-top: $su-block-i; margin-bottom: $su-block-i; }
+.push--sides        { margin-right: $su-block-i; margin-left: $su-block-i; }
+
+.push-half          { margin: $su-block--half-i; }
+.push-half--top     { margin-top: $su-block--half-i; }
+.push-half--right   { margin-right: $su-block--half-i; }
+.push-half--bottom  { margin-bottom: $su-block--half-i; }
+.push-half--left    { margin-left: $su-block--half-i; }
+.push-half--ends    { margin-top: $su-block--half-i; margin-bottom:$su-block--half-i; }
+.push-half--sides   { margin-right: $su-block--half-i; margin-left:  $su-block--half-i; }
+
+.flush              { margin: 0 !important; }
+.flush--top         { margin-top: 0 !important; }
+.flush--right       { margin-right: 0 !important; }
+.flush--bottom      { margin-bottom: 0 !important; }
+.flush--left        { margin-left: 0 !important; }
+.flush--ends        { margin-top: 0 !important; margin-bottom: 0 !important; }
+.flush--sides       { margin-right: 0 !important; margin-left: 0 !important; }
 
 
 /*
     remove paddings
+    ---------------
+    I don't find myself wanting to add padding via a helper class so i only have classes for removing
 */
-.hard           { padding:       0!important; }
-.hard--top      { padding-top:   0!important; }
-.hard--right    { padding-right: 0!important; }
-.hard--bottom   { padding-bottom:0!important; }
-.hard--left     { padding-left:  0!important; }
-.hard--ends     { padding-top:   0!important; padding-bottom:0!important; }
-.hard--sides    { padding-right: 0!important; padding-left:  0!important; }
+.hard               { padding: 0 !important; }
+.hard--top          { padding-top: 0 !important; }
+.hard--right        { padding-right: 0 !important; }
+.hard--bottom       { padding-bottom: 0 !important; }
+.hard--left         { padding-left: 0 !important; }
+.hard--ends         { padding-top: 0 !important; padding-bottom: 0 !important; }
+.hard--sides        { padding-right: 0 !important; padding-left: 0 !important; }
