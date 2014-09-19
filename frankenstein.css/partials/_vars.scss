@@ -35,8 +35,14 @@ $fs--zeta: 16px;
 /*
     Z-indexes
     ---------
+    Keep track of z-index by assigning your elements z-index to
+    one of these defined levels.
 */
-
+$z-level--1: 10;
+$z-level--2: 20;
+$z-level--3: 30;
+$z-level--4: 40;
+$z-level--5: 50;
 
 /*
     Widths
@@ -47,8 +53,8 @@ $width--site-max: 1280px;
 
 
 /*
-    Spacing
-    -------
+    Spacing units
+    -------------
 */
 $su--block: 30px;
 $su--block--half: ($su--block / 2);
