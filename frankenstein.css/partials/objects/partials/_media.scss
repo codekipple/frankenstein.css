@@ -22,7 +22,7 @@
 
 .media__img {
     float: left;
-    margin-right: $su--block;
+    margin-right: em($su--block);
 }
 
 /*
@@ -30,7 +30,7 @@
 */
 .media__img--rev {
     float: right;
-    margin-left: $su--block;
+    margin-left: em($su--block);
 }
 
 .media__img img,
