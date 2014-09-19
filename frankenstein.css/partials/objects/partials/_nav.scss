@@ -2,31 +2,33 @@
     Objects:Nav
     ==========================================================================
 
-    Nav abstraction as per: csswizardry.com/2011/09/the-nav-abstraction
+    By @csswizardry and taken from a version of inuit.css https://github.com/inuitcss
+
     When used on an `ol` or `ul`, this class throws the list into horizontal mode
     e.g.:
 
-    <ul class=nav>
+    Dependencies
+    ------------
+    * group (clearfix) - must be applied to the main element.
+
+    HTML
+    ----
+    <ul class=nav group>
         <li><a href=#>Home</a></li>
         <li><a href=#>About</a></li>
         <li><a href=#>Portfolio</a></li>
         <li><a href=#>Contact</a></li>
     </ul>
-
-    Demo: jsfiddle.net/inuitcss/Vnph4
-
 */
 
 /*
     1:  Set line-height so positing does not depend on the global line-height set on the html element.
-        Overwrite this value on a particular nav if you need to.
-
-        This way if the global line-height changes it does not effect the navigations position.
+    Overwrite this value on a particular nav if you need to.
+    This way if the global line-height changes it does not effect the navigations position.
 */
 .nav {
     list-style: none;
     margin-left: 0;
-    @extend .cf;
     line-height: 1em; /* 1 */
 
     > li {
@@ -40,17 +42,7 @@
 
 
 /*
-    .nav--stacked
-    -------------
-    extends .nav and throws the list into vertical mode, e.g.:
-
-    <ul class="nav  nav--stacked">
-        <li><a href=#>Home</a></li>
-        <li><a href=#>About</a></li>
-        <li><a href=#>Portfolio</a></li>
-       <li><a href=#>Contact</a></li>
-    </ul>
-
+    extends .nav and throws the list into vertical mode.
 */
 .nav--stacked {
     > li {
@@ -65,16 +57,7 @@
 
 /*
     Force a nav to occupy 100% of the available width of its parent. Extends
-    .nav, e.g.:
-
-    <ul class="nav  nav--fit">
-        <li><a href=#>Home</a></li>
-        <li><a href=#>About</a></li>
-        <li><a href=#>Portfolio</a></li>
-       <li><a href=#>Contact</a></li>
-    </ul>
-
-    Thanks to @pimpl for this idea!
+    .nav, original idea @pimpl
 */
 .nav--fit {
     display: table;
@@ -85,27 +68,6 @@
 
         > a {
             display: block;
-        }
-    }
-}
-
-
-/*
-    Make a list of keywords. Extends `.nav`, e.g.:
-
-    <ul class="nav  nav--keywords>
-
-*/
-.nav--keywords {
-
-    > li {
-
-        &:after {
-            content: ", ";
-        }
-
-        &:last-child:after {
-            display: none;
         }
     }
 }
