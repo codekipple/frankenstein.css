@@ -1,4 +1,10 @@
-/** @define FlexEmbed; use strict */
+/*  ==========================================================================
+    Objects:Flex Embed
+    ------------------
+
+    Taken from suitcss - 2.0.2
+    https://github.com/suitcss/components-flex-embed
+    ==========================================================================
 
 /**
  * Flexible media embeds
@@ -10,10 +16,10 @@
  * Based on: http://alistapart.com/article/creating-intrinsic-ratios-for-video
  */
 
-.FlexEmbed {
-  display: block;
-  overflow: hidden;
-  position: relative;
+.flex-embed {
+    display: block;
+    overflow: hidden;
+    position: relative;
 }
 
 /**
@@ -21,53 +27,53 @@
  * the component to respect `max-height`. Default aspect ratio is 1:1.
  */
 
-.FlexEmbed-ratio {
-  display: block;
-  padding-bottom: 100%;
-  width: 100%;
+.flex-embed__ratio {
+    display: block;
+    padding-bottom: 100%;
+    width: 100%;
 }
 
 /**
  * Modifier: 3:1 aspect ratio
  */
 
-.FlexEmbed-ratio--3by1 {
-  padding-bottom: calc(100% / 3);
+.flex-embed__ratio--3by1 {
+    padding-bottom: calc(100% / 3);
 }
 
 /**
  * Modifier: 2:1 aspect ratio
  */
 
-.FlexEmbed-ratio--2by1 {
-  padding-bottom: 50%;
+.flex-embed__ratio--2by1 {
+    padding-bottom: 50%;
 }
 
 /**
  * Modifier: 16:9 aspect ratio
  */
 
-.FlexEmbed-ratio--16by9 {
-  padding-bottom: 56.25%;
+.flex-embed__ratio--16by9 {
+    padding-bottom: 56.25%;
 }
 
 /**
  * Modifier: 4:3 aspect ratio
  */
 
-.FlexEmbed-ratio--4by3 {
-  padding-bottom: 75%;
+.flex-embed__ratio--4by3 {
+    padding-bottom: 75%;
 }
 
 /**
  * Fit the content to the aspect ratio
  */
 
-.FlexEmbed-content {
-  bottom: 0;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  width: 100%;
+.flex-embed__content {
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
 }
