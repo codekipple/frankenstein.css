@@ -8,8 +8,8 @@
 
     Cascade Index
     -------------
-    1.  Vars
-        The 'Vars' section holds global variables that all partials should be able to access if needs be. Note partials may have variables within them that are deemed only relevant for that partial. If you add a variable that you want to use across various partials you might want to consider adding it here.
+    1.  Settings
+        Global variables that all partials can access. If you add a variable that you want to use across various partials you might want to consider adding it here.
 
     2.  Functions
         Has useful functions.
@@ -37,7 +37,7 @@
         These classes take precedence over everything else. Only use these classes if the style is relevant across all viewports or a particular state, otherwise you end up trying to fight the classes in the cascade.
 */
 
-@import "vars"; /* 1 */
+@import "1.settings/includes"; /* 1 */
 
 @import "functions/includes"; /* 2 */
 
