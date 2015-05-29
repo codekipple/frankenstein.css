@@ -2,45 +2,23 @@
     Objects:Button
     ==========================================================================
 
-    The button classes are best applied to links, buttons, and submit inputs.
-    These components can be used in forms, as calls to action, or as part of the
-    general UI of the site/app.
-
-    Recommended use:
-
-    <a class="Button [Button--modifier]" role="button" href="[url]">Button text</a>
-    <button class="Button [Button--modifier]" type="submit">Button text</button>
-    <input class="Button [Button--modifier]" type="submit" value="Button text">
-
-    Button template
-
-    Build on this component using rulesets in your application-level CSS.
-
-    1.  Corrects inability to style clickable `input` types in iOS
+    1.  Corrects inability to style clickable `input` types in iOS - SUITCSS:components-button:4.0.0
     2.  Normalize `box-sizing` across all elements that this component could be
-        applied to.
-    3.  Allow easier styling.
-    4.  Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+.
-    5.  Normalise box model styles.
-    6.  Prevent button text from being selectable.
-    7.  Stop buttons wrapping and looking broken.
+        applied to. - SUITCSS:components-button:4.0.0
+    3.  Normalize `line-height`. For `input`, it can't be changed from `normal` in Firefox 4+. - SUITCSS:components-button:4.0.0
+    4.  Prevent button text from being selectable. - SUITCSS:components-button:4.0.0
+    5.  Make sure `input` will wrap text across multiple lines. - SUITCSS:components-button:4.0.0
 */
 
 .btn {
     -webkit-appearance: none; /* 1 */
     box-sizing: border-box; /* 2 */
     cursor: pointer;
-    display: inline-block; /* 3 */
-    line-height: normal; /* 4 */
+    display: inline-block;
+    line-height: normal; /* 3 */
     margin: 0;
-    border: 0; /* 5 */
-    padding-top: 0; /* 5 */
-    padding-bottom: 0; /* 5 */
-    -moz-user-select: none;
-    -ms-user-select: none;
-    -webkit-user-select: none;
-    user-select: none; /* 6 */
-    white-space: nowrap; /* 7 */
+    user-select: none; /* 4 */
+    white-space: normal; /* 5 */
     position: relative;
     text-decoration: none;
 
@@ -56,7 +34,7 @@
 
 
     /*
-        Remove excess padding and border in Firefox 4+
+        Remove excess padding and border in Firefox 4+ - SUITCSS:components-button:4.0.0
     */
     &::-moz-focus-inner {
         border: 0;
