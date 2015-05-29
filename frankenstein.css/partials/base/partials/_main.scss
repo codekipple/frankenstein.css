@@ -3,8 +3,8 @@
     ========================================================================== */
 
 /*
-    1. Prevent iOS text size adjust after orientation change, without disabling
-       user zoom. - Normalize:v2.1.0
+    1. Prevent iOS and IE text size adjust after device orientation change, without disabling
+       without disabling user zoom. - Normalize:v3.0.3
 */
 html {
     -webkit-text-size-adjust: 100%; /* 1 */
@@ -14,7 +14,7 @@ html {
 }
 
 /*
-    1. Remove default margin. - Normalize:v2.1.0
+    1. Remove default margin. - Normalize:v3.0.3
 */
 body {
     margin: 0; /* 1 */
