@@ -18,7 +18,7 @@
 /*
 Create more grid sizes below:-
 
-@include respond($bp--grid-small) {
+@include respond('min-width', $bp--grid-small) {
     @include inuit-widths(1 2 3 4 5, -small);
 }
 */
