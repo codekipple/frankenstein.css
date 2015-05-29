@@ -1,129 +1,24 @@
 /*  ==========================================================================
     Top:Widths
+    ==========================================================================
+    Taken from:- inuit.css
+    https://github.com/inuitcss/trumps.widths - 0.4.2
+    ==========================================================================
+
+    A series of width helper classes that you can use to size things like grid
+    systems. Classes can take a fraction-like format (e.g. `.u-2/3`) or a spoken-
+    word format (e.g. `.u-2-of-3`). Use these in your markup:
+
+    <div class="u-7/12">
+
     ========================================================================== */
 
-/*
-    Sizes in human readable format. These are used in conjunction with other
-    objects and abstractions, most commonly the grid system.
-
-    We have a mixin to generate our widths and their breakpoint-specific
-    variations.
-*/
-
-@mixin grid-setup($namespace: "") {
-    /*
-        Whole
-        -----
-    */
-    .#{$namespace}one-whole         { width:100%; }
-
-
-    /*
-        Halves
-        ------
-    */
-    .#{$namespace}one-half          { width:50%; }
-
-
-    /*
-        Thirds
-        ------
-    */
-    .#{$namespace}one-third         { width:33.3333333%; }
-    .#{$namespace}two-thirds        { width:66.6666666%; }
-
-
-    /*
-        Quarters
-        --------
-    */
-    .#{$namespace}one-quarter       { width:25%; }
-    .#{$namespace}two-quarters      { @extend .#{$namespace}one-half; }
-    .#{$namespace}three-quarters    { width:75%; }
-
-
-    /*
-        Fifths
-        ------
-    */
-    .#{$namespace}one-fifth         { width:20%; }
-    .#{$namespace}two-fifths        { width:40%; }
-    .#{$namespace}three-fifths      { width:60%; }
-    .#{$namespace}four-fifths       { width:80%; }
-
-
-    /*
-        Sixths
-        ------
-    */
-    .#{$namespace}one-sixth         { width:16.6666666%; }
-    .#{$namespace}two-sixths        { @extend .#{$namespace}one-third; }
-    .#{$namespace}three-sixths      { @extend .#{$namespace}one-half; }
-    .#{$namespace}four-sixths       { @extend .#{$namespace}two-thirds; }
-    .#{$namespace}five-sixths       { width:83.3333333%; }
-
-
-    /*
-        Eighths
-        -------
-    */
-    .#{$namespace}one-eighth        { width:12.5%; }
-    .#{$namespace}two-eighths       { @extend .#{$namespace}one-quarter; }
-    .#{$namespace}three-eighths     { width:37.5%; }
-    .#{$namespace}four-eighths      { @extend .#{$namespace}one-half; }
-    .#{$namespace}five-eighths      { width:62.5%; }
-    .#{$namespace}six-eighths       { @extend .#{$namespace}three-quarters; }
-    .#{$namespace}seven-eighths     { width:87.5%; }
-
-    /*
-        Ninths
-        ------
-    */
-    .#{$namespace}one-ninth           { width: 11.1111111%; }
-    .#{$namespace}two-ninths          { width: 22.2222222%; }
-    .#{$namespace}four-ninths         { width: 44.4444444%; }
-    .#{$namespace}five-ninths         { width: 55.5555555%; }
-    .#{$namespace}seven-ninths        { width: 77.7777777%; }
-    .#{$namespace}eight-ninths        { width: 88.8888888%; }
-
-    /*
-        Tenths
-        ------
-    */
-    .#{$namespace}one-tenth         { width:10%; }
-    .#{$namespace}two-tenths        { @extend .#{$namespace}one-fifth; }
-    .#{$namespace}three-tenths      { width:30%; }
-    .#{$namespace}four-tenths       { @extend .#{$namespace}two-fifths; }
-    .#{$namespace}five-tenths       { @extend .#{$namespace}one-half; }
-    .#{$namespace}six-tenths        { @extend .#{$namespace}three-fifths; }
-    .#{$namespace}seven-tenths      { width:70%; }
-    .#{$namespace}eight-tenths      { @extend .#{$namespace}four-fifths; }
-    .#{$namespace}nine-tenths       { width:90%; }
-
-
-    /*
-        Twelfths
-        --------
-    */
-    .#{$namespace}one-twelfth       { width:8.3333333%; }
-    .#{$namespace}two-twelfths      { @extend .#{$namespace}one-sixth; }
-    .#{$namespace}three-twelfths    { @extend .#{$namespace}one-quarter; }
-    .#{$namespace}four-twelfths     { @extend .#{$namespace}one-third; }
-    .#{$namespace}five-twelfths     { width:41.6666666% }
-    .#{$namespace}six-twelfths      { @extend .#{$namespace}one-half; }
-    .#{$namespace}seven-twelfths    { width:58.3333333%; }
-    .#{$namespace}eight-twelfths    { @extend .#{$namespace}two-thirds; }
-    .#{$namespace}nine-twelfths     { @extend .#{$namespace}three-quarters; }
-    .#{$namespace}ten-twelfths      { @extend .#{$namespace}five-sixths; }
-    .#{$namespace}eleven-twelfths   { width:91.6666666%; }
-}
-
-@include grid-setup();
+@include inuit-widths(1 2 3 4 5);
 
 /*
 Create more grid sizes below:-
 
 @include respond($bp--grid-small) {
-    @include grid-setup("small-");
+    @include inuit-widths(1 2 3 4 5, -small);
 }
 */

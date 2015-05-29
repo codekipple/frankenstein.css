@@ -1,0 +1,29 @@
+/*  ==========================================================================
+    Toolbox:Settings:Inuit
+    ========================================================================== */
+
+$inuit-namespace: null;
+$inuit-base-spacing-unit: 24px;
+
+// Grids
+$inuit-layout-namespace: g;
+$inuit-enable-layout--rev: true;
+$inuit-enable-layout--flush: true;
+// $inuit-enable-layout--tiny: true;
+// $inuit-enable-layout--small: true;
+// $inuit-enable-layout--large: true;
+// $inuit-layout-gutter: 45px;
+// $inuit-layout-gutter--tiny: 10px;
+// $inuit-layout-gutter--small: 20px;
+// $inuit-layout-gutter--large: 50px;
+
+// margins
+$inuit-enable-margins: true;
+$inuit-enable-margins--tiny: true;
+$inuit-enable-margins--small: true;
+$inuit-enable-margins--large: true;
+$inuit-enable-margins--none: true;
+$inuit-margin--small: 10px;
+
+// paddings
+$inuit-enable-paddings--none: true;
