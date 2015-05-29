@@ -1,56 +1,34 @@
 /*  ==========================================================================
-    Includes
+    Cascade Index
     ==========================================================================
 
     This is the main includes file. Here we include each of the sections.
     This includes file only concerns it's self with the cascade order of
     the different sections. Each section than controls it's own internal cascade.
 
-    Cascade Index
-    -------------
-    1.  Settings
-        Global variables that all partials can access. If you add a variable that you want to use across various partials you might want to consider adding it here.
+    0.  Toolbox
+        The tools needed to author the styles. Variables, functions, breakpoints, mixins.
 
-    2.  Functions
-        Has useful functions.
-
-    3.  Breakpoints
-        The 'Breakpoints' section contains a list of global variables that represent different breakpoint sizes. They are separated from the 'Vars' section because they will make use of some functions, particularly em() and bp-size().
-
-    4.  Mixins
-        Has useful mixins.
-
-    5.  Base
+    1.  Base
         These are styles which effect base elements (p, a, table ect). The 'Base' section includes a reset and parts of normalize.css(https://github.com/necolas/normalize.css) are sprinkled throughout.
 
-    6.  vendor
-        If you want to include 3rd party css. They are included here so that the 'Objects' and 'Ui' sections van override styles.
+    2.  Vendor
+        3rd party css. They are included here so that the 'Objects' and 'Ui' sections van override styles.
 
-    7.  Objects
-        Reusable patterns. May contain generic patterns like the 'Media' object but you may also fill this folder with patterns that are a little more specific to your project.
+    3.  Objects
+        Reusable patterns. May contain generic patterns like the 'Media'(http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/) object but you may also fill this folder with patterns that are a little more specific to your project.
 
-    8.  Ui
+    4.  Ui
         The main styles for your project.
 
-    9.  Top
+    5.  Top
         Overrides, helpers, utilities, states.
         These classes take precedence over everything else. Only use these classes if the style is relevant across all viewports or a particular state, otherwise you end up trying to fight the classes in the cascade.
 */
 
-@import "1.settings/includes"; /* 1 */
-
-@import "2.functions/includes"; /* 2 */
-
-@import "3.breakpoints/includes"; /* 3 */
-
-@import "mixins/includes"; /* 4 */
-
-@import "base/includes"; /* 5 */
-
-@import "vendor/includes"; /* 6 */
-
-@import "objects/includes"; /* 7 */
-
-@import "ui/includes"; /* 8 */
-
-@import "top/includes"; /* 9 */
+@import "0.toolbox/includes"; /* 0 */
+@import "1.base/includes"; /* 1 */
+@import "2.vendor/includes"; /* 2 */
+@import "3.objects/includes"; /* 3 */
+@import "4.ui/includes"; /* 4 */
+@import "5.top/includes"; /* 5 */
