@@ -4,14 +4,15 @@
 
 # frankenstein.css – 1.0.0-beta
 
-I have enjoyed using various css frameworks but there are always parts i don't need. **frankenstein.css** is my own personnel css framework.
+I have enjoyed using various css frameworks but there are always parts I don't need. **frankenstein.css** is my own personnel css framework.
 
 It's unashamedly a mish (monster) mash of other css frameworks that i find useful when building websites (I will endeavor to give credit to which frameworks i stole from) as well as things that are peculiar to my way of working.
 
-## Goals
+## Features
 
 * BEM like class names
-* Reduce CSS by using more classes in HTML.
+* OCSS where it makes sense
+* Utility classes.
 
 ## Why not just use an existing framework?
 
@@ -23,7 +24,7 @@ There are different parts in all of the css frameworks i've tried that i've like
 
 No.
 
-I reserve the right to chop and change the framework as i see fit to suite the way i'm currently working. I'll try to stick to [semvar](http://semver.org/) versioning but i think it will be hard as i will be adding and removing bits often.
+I reserve the right to chop and change the framework as i see fit to suite the way i'm currently working.
 
 I would recommend just browsing through the framework and using it as a learning tool or to create your own **frankenstein**.
 
@@ -31,14 +32,6 @@ I would recommend just browsing through the framework and using it as a learning
 
 * [inuit.css](https://github.com/csswizardry/inuit.css/)
 * [SUIT](https://github.com/suitcss/suit)
-
-## Browser support
-
-* Google Chrome (latest)
-* Opera (latest)
-* Firefox (latest)
-* Safari (latest)
-* Internet Explorer 8+
 
 ## Dependencies
 Sass for preprocessing. I would also recommend something like [autoprefixer](https://github.com/ai/autoprefixer). I'm using **autoprefixer** myself so all css is included prefix free because **autoprefixer** is adding them in for me.
