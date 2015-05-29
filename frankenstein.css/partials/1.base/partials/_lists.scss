@@ -3,18 +3,11 @@
     ========================================================================== */
 
 /*
-    1. Remove vertical spacing from nested lists.
+    1. Remove vertical spacing from nested lists. - inuit.css 0.1.0
 */
 li {
     > ul,
     > ol {
         margin-bottom: 0; /* 1 */
     }
-}
-
-/*
-    1. Have a numbered `ul` without the semantics implied by using an `ol`.
-*/
-/*ul*/.numbered-list {
-    list-style-type: decimal; /* 1 */
 }
