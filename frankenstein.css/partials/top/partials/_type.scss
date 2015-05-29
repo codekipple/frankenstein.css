@@ -1,26 +1,26 @@
 /*  ==========================================================================
-    Generic:Helpers:Text
+    Utilities:Helpers:Text
     ========================================================================== */
 
 /*
     Text alignment
 */
-.text--left     { text-align: left  !important; }
-.text--center   { text-align: center!important; }
-.text--right    { text-align: right !important; }
+.u-text--left     { text-align: left  !important; }
+.u-text--center   { text-align: center!important; }
+.u-text--right    { text-align: right !important; }
 
 /*
     Apply capital case to an element (usually a `strong`).
 */
-.caps { text-transform: uppercase !important; }
+.u-caps { text-transform: uppercase !important; }
 
 /**
  * Font weights
  */
-.weight--light      { font-weight:300!important; }
-.weight--normal     { font-weight:400!important; }
-.weight--semibold   { font-weight:600!important; }
-.weight--bold       { font-weight:bold!important; }
+.u-weight--light      { font-weight:300!important; }
+.u-weight--normal     { font-weight:400!important; }
+.u-weight--semibold   { font-weight:600!important; }
+.u-weight--bold       { font-weight:bold!important; }
 
 /*
     Text truncation
@@ -34,7 +34,7 @@
         nodes.
 */
 
-.text--truncate {
+.u-text--truncate {
     max-width: 100%; /* 1 */
     overflow: hidden !important;
     text-overflow: ellipsis !important;
@@ -45,26 +45,26 @@
 /*
     font sizes
 */
-.alpha {
+.u-alpha {
     font-size: em($fs--alpha);
 }
 
-.beta {
+.u-beta {
     font-size: em($fs--beta);
 }
 
-.gamma {
+.u-gamma {
     font-size: em($fs--gamma);
 }
 
-.delta {
+.u-delta {
     font-size: em($fs--delta);
 }
 
-.epsilon {
+.u-epsilon {
     font-size: em($fs--epsilon);
 }
 
-.zeta {
+.u-zeta {
     font-size: em($fs--zeta);
 }

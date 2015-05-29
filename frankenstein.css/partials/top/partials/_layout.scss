@@ -1,5 +1,5 @@
 /*  ==========================================================================
-    Helpers:Layout
+    Utilities:Layout
     ========================================================================== */
 
 /*
@@ -17,8 +17,8 @@
         `:before` to contain the top-margins of child elements.
  */
 
-.cf,
-.group {
+.u-cf,
+.u-group {
     &:before,
     &:after {
         content: ""; /* 1 */
@@ -33,5 +33,5 @@
 /*
     Floats
 */
-.float--right   { float: right !important; }
-.float--left    { float: left !important; }
+.u-float--right   { float: right !important; }
+.u-float--left    { float: left !important; }

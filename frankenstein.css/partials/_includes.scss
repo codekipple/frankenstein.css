@@ -32,8 +32,9 @@
     8.  Ui
         The main styles for your project.
 
-    9.  Helpers
-        Style trumps. Helper classes take precedence over everything else. I recommend only using helper classes if the style the helper class enables is relevant across all viewports otherwise you end up trying to fight the helper classes in the cascade.
+    9.  Top
+        Overrides, helpers, utilities, states.
+        These classes take precedence over everything else. Only use these classes if the style is relevant across all viewports or a particular state, otherwise you end up trying to fight the classes in the cascade.
 */
 
 @import "vars"; /* 1 */
@@ -52,4 +53,4 @@
 
 @import "ui/includes"; /* 8 */
 
-@import "helpers/includes"; /* 9 */
+@import "top/includes"; /* 9 */
