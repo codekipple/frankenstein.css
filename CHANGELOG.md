@@ -8,6 +8,7 @@
 * Added SUITCSS flexembed object version 2.0.2
 * Merged in changes from Normalize 3.0.3
 * Swapped out the breakpoint mixin for one found in the Magento 'RWD' theme
+* Added placeholder mixin
 
 === 0.1.0 (August 8, 2014)
 
