@@ -1,0 +1,12 @@
+/*
+    If your having trouble with colors in firefox
+    setting opacity: 1 may help you.
+    http://stackoverflow.com/questions/14014329/moz-placeholder-does-not-work-in-firefox#comment23310063_14014368
+*/
+@mixin placeholder {
+    ::-webkit-input-placeholder { @content }
+    :-moz-placeholder           { @content }
+    ::-moz-placeholder          { @content }
+    :-ms-input-placeholder      { @content }
+    .placeholder                { @content }
+}
