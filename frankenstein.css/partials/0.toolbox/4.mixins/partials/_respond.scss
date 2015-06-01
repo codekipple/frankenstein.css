@@ -45,7 +45,7 @@ $mq-fixed-value: 1024px !default;
     // Media queries supported
     @if $mq-support == true {
 
-        @media #{$media} and ($feature: em($value, $f-browser-default)) {
+        @media #{$media} and ($feature: em($value, $fs--browser-default)) {
             @content;
         }
 
