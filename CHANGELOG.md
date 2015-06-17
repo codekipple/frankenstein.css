@@ -11,6 +11,7 @@
 * Added placeholder mixin
 * Added 'o-' namespace for objects
 * Added inbox partial
+* Added internal readme
 
 === 0.1.0 (August 8, 2014)
 

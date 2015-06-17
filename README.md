@@ -12,19 +12,19 @@ It's unashamedly a mish (monster) mash of other css frameworks that i find usefu
 
 * BEM like class names
 * OCSS where it makes sense
-* Utility classes.
+* [Namespaced](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/).
 
 ## Why not just use an existing framework?
 
-Frameworks are great and i use them all the time. They are especially great for prototyping and learning. With that said when i'm building a new site i've come to prefer to know every single line of css i use. I like to be able to justify every line and know the reason for it.
+Frameworks are great and i use them all the time. They are especially great for prototyping and learning. With that said when I'm building a new site I've come to prefer to know every single line of css i use. I like to be able to justify every line and know the reason for it.
 
-There are different parts in all of the css frameworks i've tried that i've liked so restricting myself to using only one framework was not working out so well thus frankenstein was born (created, muhaha).
+There are different parts in all of the css frameworks I've tried that I've liked so restricting myself to using only one framework was not working out so well thus frankenstein was born (created, muhaha).
 
 ## Should i use this framework?
 
 No.
 
-I reserve the right to chop and change the framework as i see fit to suite the way i'm currently working.
+I reserve the right to chop and change the framework as i see fit to suite the way I'm currently working.
 
 I would recommend just browsing through the framework and using it as a learning tool or to create your own **frankenstein**.
 
