@@ -10,6 +10,7 @@
 * Swapped out the breakpoint mixin for one found in the Magento 'RWD' theme
 * Added placeholder mixin
 * Added 'o-' namespace for objects
+* Added inbox partial
 
 === 0.1.0 (August 8, 2014)
 
