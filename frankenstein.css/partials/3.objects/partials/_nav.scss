@@ -26,7 +26,7 @@
     Overwrite this value on a particular nav if you need to.
     This way if the global line-height changes it does not effect the navigations position.
 */
-.nav {
+.o-nav {
     list-style: none;
     margin-left: 0;
     line-height: 1em; /* 1 */
@@ -44,7 +44,7 @@
 /*
     extends .nav and throws the list into vertical mode.
 */
-.nav--stacked {
+.o-nav--stacked {
     > li {
         display: list-item;
 
@@ -59,7 +59,7 @@
     Force a nav to occupy 100% of the available width of its parent. Extends
     .nav, original idea @pimpl
 */
-.nav--fit {
+.o-nav--fit {
     display: table;
     width: 100%;
 
