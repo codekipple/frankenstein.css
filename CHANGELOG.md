@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.1.1 (February 22, 2016)
+
 * Overhaul of sass structure, more closely resembles itcss.io now.
 * Added in inuit.css layout object version 0.3.2
 * Added in inuit.css widths tool version 0.1.4

@@ -1,12 +1,12 @@
 {
   "name": "frankenstein.css",
-  "description": "A sass based css starting point",
+  "description": "A sass based CSS starting point",
   "repository": {
     "type": "git",
     "url": "https://github.com/codekipple/frankenstein.css"
   },
-  "readme": "Made by Niki Shop.",
-  "version": "1.0.0-beta",
+  "readme": "A sass based CSS starting point.",
+  "version": "0.1.1",
   "devDependencies": {
     "grunt": "~0.4.5",
     "load-grunt-config": "~0.13.0",
