@@ -1,17 +1,16 @@
-/*  ==========================================================================
+/*
     Toolbox:Mixins:Widths
-    ==========================================================================
+    =====================
+
     Taken from:- inuit.css
     https://github.com/inuitcss/tools.widths - 0.1.4
-    ==========================================================================
 
     A mixin to spit out our width classes. Pass in the columns we want the widths
     to have, and an optional suffix for responsive widths. E.g. to create thirds
     and quarters for a small breakpoint:
 
     @include inuit-widths(3 4, -sm);
-
-    ========================================================================== */
+*/
 
 // Predefine the variables below in order to alter and enable specific features.
 $inuit-widths-namespace: $inuit-namespace !default;

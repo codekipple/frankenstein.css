@@ -1,9 +1,8 @@
-/*  ==========================================================================
+/*
     Toolbox:Mixins:Respond
-    ==========================================================================
+    ======================
     Taken from:- Magento 'RWD' Theme
     http://devdocs.magento.com/guides/m1x/ce19-ee114/RWD_dev-guide.html - 1.14
-    ==========================================================================
 
     Usage example:
     For IE set $mq-support to false.
@@ -32,8 +31,7 @@
     @include respond(max-width, 1200px) {
         div { color:#888; }
     }
-
-    ========================================================================== */
+*/
 
 $mq-support: true !default;
 $mq-fixed-value: 1024px !default;

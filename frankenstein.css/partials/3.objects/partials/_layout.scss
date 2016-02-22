@@ -1,9 +1,9 @@
-/*  ==========================================================================
+/*
     Objects:Layout
-    ==========================================================================
+    ==============
+
     Taken from:- inuit.css
     https://github.com/inuitcss/objects.layout - 0.3.2
-    ==========================================================================
 
     The inuitcss layout system uses `box-sizing: border-box;` and
     `display: inline-block;` to create an extremely powerful, flexible
@@ -23,8 +23,7 @@
             <p>One third grid</p>
         </div>
     </div>
-
-    ========================================================================== */
+*/
 
 // Predefine the variables below in order to alter and enable specific features.
 $inuit-layout-namespace:        $inuit-namespace !default;
