@@ -1,8 +1,0 @@
-/*
-    Functions:Breakpoints
-    =====================
-*/
-
-@function bp-size($size-px) {
-    @return em($size-px, $fs--browser-default);
-}
