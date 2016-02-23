@@ -1,5 +1,7 @@
 === HEAD
 
+* Removed the bp-size() function
+
 === 0.1.1 (February 22, 2016)
 
 * Overhaul of sass structure, more closely resembles itcss.io now.
