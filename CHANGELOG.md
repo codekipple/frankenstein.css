@@ -1,5 +1,6 @@
 === HEAD
 
+* Renamed 'layout' to 'floats' in tops
 * Added 'aligncenter' WordPress utility class
 * Moved the breakpoints into the settings section
 * Removed the bp-size() function
