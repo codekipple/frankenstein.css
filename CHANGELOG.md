@@ -1,5 +1,6 @@
 === HEAD
 
+* Moved the breakpoints into the settings section
 * Removed the bp-size() function
 
 === 0.1.1 (February 22, 2016)

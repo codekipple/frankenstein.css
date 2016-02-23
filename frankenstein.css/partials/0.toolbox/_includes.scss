@@ -9,14 +9,10 @@
     2.  Functions
         (hopefully) Useful functions.
 
-    3.  Breakpoints
-        The 'Breakpoints' section contains a list of global variables that represent different breakpoint sizes. They are separated from the 'Settings' section because they will make use of some functions, particularly em().
-
-    4.  Mixins
+    3.  Mixins
         (hopefully) Useful mixins.
 */
 
 @import "1.settings/includes"; /* 1 */
 @import "2.functions/includes"; /* 2 */
-@import "3.breakpoints/includes"; /* 3 */
-@import "4.mixins/includes"; /* 4 */
+@import "3.mixins/includes"; /* 4 */
