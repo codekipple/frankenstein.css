@@ -10,7 +10,7 @@ It's unashamedly a mish (monster) mash of other css frameworks that i find usefu
 
 ## Features
 
-* BEM like class names
+* [BEM like class names](http://csswizardry.com/2013/01/mindbemding-getting-your-head-round-bem-syntax/)
 * [ITCSS](https://www.youtube.com/watch?v=1OKZOV-iLj4) for CSS architecture
 * [OCSS](https://github.com/stubbornella/oocss/wiki)
 * [Namespaced](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/)
