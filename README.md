@@ -2,7 +2,7 @@
 
 [Image source](https://www.flickr.com/photos/tom-margie/1538953234/)
 
-# frankenstein.css – 1.0.0-beta
+# frankenstein.css
 
 I have enjoyed using various css frameworks but there are always parts I don't need. **frankenstein.css** is my own personnel css framework.
 
