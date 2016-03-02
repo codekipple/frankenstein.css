@@ -23,7 +23,7 @@ The CSS architecture follows a specific structure as set out by Harry Roberts in
 
 ### OCSS
 Object orientated CSS principles are used. The '3.objects' folder contains all the objects.
-OCSS was created by Nicole Sullivan. You can read more about it [here](https://github.com/stubbornella/oocss/wiki).
+[OCSS](https://github.com/stubbornella/oocss/wiki) was created by Nicole Sullivan.
 
 ## Why not just use an existing framework?
 
