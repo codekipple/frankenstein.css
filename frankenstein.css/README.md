@@ -1,4 +1,4 @@
-# Namespaces
+## Namespaces
 
 The tactic of namespacing parts of the css has been talked about by various people. This css is following the namespace guideline as set out by [Harry Robberts](http://csswizardry.com/2015/03/more-transparent-ui-code-with-namespaces/).
 
