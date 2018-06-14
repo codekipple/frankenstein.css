@@ -8,11 +8,16 @@
   "readme": "A sass based CSS starting point.",
   "version": "0.1.1",
   "devDependencies": {
-    "grunt": "~0.4.5",
-    "load-grunt-config": "~0.13.0",
-    "grunt-contrib-watch": "~0.6.1",
-    "grunt-sass": "~1.0.0",
-    "grunt-autoprefixer": "~1.0.0",
-    "grunt-contrib-cssmin": "~0.10.0"
+    "autoprefixer": "^8.6.2",
+    "node-sass": "^4.9.0",
+    "onchange": "^4.0.0",
+    "postcss-cli": "^5.0.0"
+  },
+  "dependencies": {},
+  "scripts": {
+    "scss": "node-sass --output-style nested --indent-type tab --indent-width 4 -o css frankenstein.css",
+    "autoprefixer": "postcss -u autoprefixer -r css/*",
+    "build": "npm run scss && npm run autoprefixer",
+    "watch": "onchange 'frankenstein.css/*.scss' -- npm run build"
   }
 }

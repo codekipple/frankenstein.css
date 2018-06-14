@@ -47,5 +47,9 @@ I would recommend just browsing through the framework and using it as a learning
 ## Dependencies
 Sass for preprocessing. I would also recommend something like [autoprefixer](https://github.com/ai/autoprefixer). I'm using **autoprefixer** myself so all CSS is included prefix free because **autoprefixer** is adding them in for me.
 
-* **Sass 3.2**
+* **Sass**
 * **autoprefixer**
+
+## Compiling and running this repo
+* `npm install`
+* `npm run watch`
