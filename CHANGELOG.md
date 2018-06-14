@@ -1,5 +1,7 @@
 === HEAD
 
+=== 0.2.0 (June 07, 2018)
+
 * Added 'display' in tops
 * Renamed 'layout' to 'floats' in tops
 * Added 'aligncenter' WordPress utility class
