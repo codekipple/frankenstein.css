@@ -1,4 +1,6 @@
 === HEAD
+* Removed media query fallbacks for older browsers
+* Swapped out Gulp for NPM scripts, updated npm modules
 
 === 0.2.0 (June 07, 2018)
 
