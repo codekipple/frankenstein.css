@@ -1,4 +1,5 @@
 === HEAD
+* Fixed WordPress alignleft and alignright classes
 * Removed media query fallbacks for older browsers
 * Swapped out Gulp for NPM scripts, updated npm modules
 
