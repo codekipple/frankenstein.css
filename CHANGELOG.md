@@ -1,4 +1,7 @@
 === HEAD
+
+=== 1.0.0 (June 19, 2018)
+* Updated normalize to version 8.0.0
 * Fixed WordPress alignleft and alignright classes
 * Removed media query fallbacks for older browsers
 * Swapped out Gulp for NPM scripts, updated npm modules
