@@ -1,0 +1,18 @@
+/*
+    Base:Misc
+    ==========
+*/
+
+/*
+    1. Add the correct display in IE 10+. - Normalize:v8.0.0
+*/
+template {
+    display: none; /* 1 */
+}
+
+/*
+    1. Add the correct display in IE 10. - Normalize:v8.0.0
+*/
+[hidden] {
+    display: none; /* 1 */
+}
