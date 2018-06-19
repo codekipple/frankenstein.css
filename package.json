@@ -18,6 +18,6 @@
     "scss": "node-sass --output-style nested --indent-type tab --indent-width 4 -o css frankenstein.css",
     "autoprefixer": "postcss -u autoprefixer -r css/*",
     "build": "npm run scss && npm run autoprefixer",
-    "watch": "onchange 'frankenstein.css/*.scss' -- npm run build"
+    "watch": "onchange 'frankenstein.css/**/*.scss' -- npm run build"
   }
 }
